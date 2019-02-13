@@ -1,0 +1,2 @@
+select employees.first_name, employees.last_name, employees.hire_date
+from employees where employees.hire_date > (select hire_date from employees where first_name='Jones' or last_name='Jones');
