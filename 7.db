@@ -1,0 +1,1 @@
+select em.employee_id, jobs.job_title, datediff(job_history.end_date, job_history.start_date ) from employees em join jobs on em.job_id = jobs.job_id join job_history on em.employee_id = job_history.employee_id;
